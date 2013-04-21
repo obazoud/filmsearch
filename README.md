@@ -7,7 +7,7 @@ of interest.
 
 I think I'll attempt to:
 
-- [ ] Download and import the latest copy of the IMDB database into Postgres
+- [x] Download and import the latest copy of the IMDB database into Postgres
 - [ ] Write up a document schema to support interesting searches over films
 - [ ] Spin up an ElasticSearch cluster to hold the content
 - [ ] Write some SQL and indexing code to import the documents
