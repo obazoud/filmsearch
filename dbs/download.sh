@@ -6,5 +6,5 @@ FILES=( "actors" "actresses" "cinematographers" "composers" "countries" "directo
 
 for file in ${FILES[@]}
 do
-	echo wget "${BASE}/${file}.list.gz"
+	wget "${BASE}/${file}.list.gz"
 done;
