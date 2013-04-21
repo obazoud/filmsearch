@@ -4,7 +4,7 @@
 BASE="ftp://ftp.sunet.se/pub/tv+movies/imdb/"
 FILES=( "actors" "actresses" "cinematographers" "composers" "countries" "directors" "distributors" "editors" "genres" "keywords" "language" "locations" "movies" "producers" "release-dates" "running-times" "soundtracks" "writers" )
 
-for file in ${FILES}
+for file in ${FILES[@]}
 do
-	wget "${BASE}/${file}.list.gz"
+	echo wget "${BASE}/${file}.list.gz"
 done;
