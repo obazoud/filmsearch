@@ -1,0 +1,9 @@
+# Python environment
+*.pyc
+env
+
+# IMDB data files
+*.list.gz
+
+# vim
+*.swp
