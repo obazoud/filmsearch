@@ -1,0 +1,15 @@
+{
+    "title": "Memento",
+    "year": 2000,
+
+    "country": {
+        "id": "us",
+        "name": "United States of America"
+    },
+
+    "people": [
+        {"role": "director",    "name": "Christopher Nolan"},
+        {"role": "cast",        "name": "Guy Pearce"},
+        {"role": "cast",        "name": "Carrie-Anne Moss"}
+    ]
+}

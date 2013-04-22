@@ -1,0 +1,16 @@
+{
+    "title": "Brazil",
+    "year": 1985,
+
+    "country": {
+        "id": "uk",
+        "name": "United Kingdom"
+    },
+
+    "people": [
+        {"role": "director",    "name": "Terry Gilliam"},
+        {"role": "cast",        "name": "Jonathan Pryce"},
+        {"role": "cast",        "name": "Robert De Niro"},
+        {"role": "cast",        "name": "Kim Greist"}
+    ]
+}

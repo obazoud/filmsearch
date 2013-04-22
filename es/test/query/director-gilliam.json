@@ -1,0 +1,26 @@
+{
+    "query": {
+        "nested" : {
+            "path" : "people",
+            "score_mode" : "avg",
+
+            "query" : {
+                "bool" : {
+                    "must" : [
+                        {
+                            "match" : {"people.role" : "director"}
+                        },
+                        {
+                            "match" : {"people.name" : "terry"}
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "facets": {
+        "year": {"terms": {"field": "year"}},
+        "country.id": {"terms": {"field": "country.id"}},
+        "country.name": {"terms": {"field": "country.name.untouched"}}
+    }
+}
