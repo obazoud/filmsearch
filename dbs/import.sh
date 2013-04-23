@@ -1,3 +1,5 @@
 #!/bin/bash
 
-python imdbpy2sql.py -d "." -u "postgres:///jay"
+BASE=`dirname $0`
+
+python imdbpy2sql.py -d "${BASE}/raw" -u "postgres:///jay"
