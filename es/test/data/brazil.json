@@ -1,6 +1,7 @@
 {
     "title": "Brazil",
-    "year": 1985,
+    "production_year": 1985,
+    "language": "English",
 
     "country": {
         "id": "uk",

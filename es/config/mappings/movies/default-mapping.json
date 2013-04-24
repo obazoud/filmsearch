@@ -6,8 +6,10 @@
 
         "properties": {
 
-            "title":    {"type": "string", "index": "analyzed", "store": "yes"},
-            "year":     {"type": "integer", "index": "not_analyzed", "store": "yes"},
+            "id":               {"type": "integer", "index": "not_analyzed", "store": "yes"},
+            "title":            {"type": "string", "index": "analyzed", "store": "yes"},
+            "production_year":  {"type": "integer", "index": "not_analyzed", "store": "yes"},
+            "language":         {"type": "string", "index": "not_analyzed", "store": "yes"},
 
             "country": {
                 "type": "object",
