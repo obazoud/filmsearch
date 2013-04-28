@@ -18,7 +18,7 @@ select
         where ac.movie_id = t.id
         and ac.role_id in (1, 2)
         and ac.nr_order <= 10
-    ) as cast,
+    ) as cast/*,
     (
         select array_agg(lc.info)
         from movie_info as lc
@@ -31,16 +31,8 @@ select
         from  movie_keyword as mk
         join keyword as k on k.id = mk.id
         where mk.movie_id = t.id
-    ) as keywords
+    ) as keywords*/
 from title as t
-left join movie_info as ln on ln.movie_id = t.id and ln.info_type_id = 4
-left join movie_info as cn on cn.movie_id = t.id and cn.info_type_id = 8
-where t.kind_id = 1
-and t.title = 'Brazil'
-and t.production_year = 1985
-group by
-    t.id,
-    t.title,
-    t.production_year,
-    ln.info,
-    cn.info;
+join movie_info as ln on ln.movie_id = t.id and ln.info_type_id = 4
+join movie_info as cn on cn.movie_id = t.id and cn.info_type_id = 8
+where t.kind_id = 1;
